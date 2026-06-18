@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Twinkle+Star&display=swap');
+
+:root{
+    --branco: white;
+    --cor-de-fundo:#F9B2D7;
+    --fundo-senha:#CFECF3;
+    --fundo-texto:#BDE3C3;
+    --borda:#F8F7BA;
+    --twinkle: "Twinkle Star", cursive;
+
+}
+*{
+    font-weight:400;
+}
+body{
+    color: var(--branco);
+    background-color: var(--cor-de-fundo);
+    font-family: var(--twinkle);
+}
