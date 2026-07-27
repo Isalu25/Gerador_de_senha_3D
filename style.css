@@ -6,14 +6,30 @@
     --fundo-senha:#CFECF3;
     --fundo-texto:#BDE3C3;
     --borda:#F8F7BA;
-    --twinkle: "Twinkle Star", cursive;
+    --fonte: "Twinkle Star", cursive;
+}
+    font-weight:400{
 
 }
-*{
-    font-weight:400;
-}
+
 body{
     color: var(--branco);
     background-color: var(--cor-de-fundo);
     font-family: var(--twinkle);
+}
+.titulo-principal{
+    font-family: var(--fonte);
+    font-size: 32px;
+}
+.titulo-secundario{
+    font-size:24px;
+    text-align:center;
+    margin:80px;
+}
+.conteudo-titulo{
+    text-align: center;
+    margin:80px;
+}
+.cadeado-conteudo{
+    width: 300px;
 }
