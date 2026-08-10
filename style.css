@@ -5,13 +5,13 @@
     --cor-de-fundo:#F9B2D7;
     --fundo-senha:#CFECF3;
     --fundo-texto:#BDE3C3;
-    --borda:#F8F7BA;
+    --borda:#F8F7BA; 
     --fonte: "Twinkle Star", cursive;
-}
-    font-weight:400{
 
 }
-
+ {
+     font-weight:400;
+}
 body{
     color: var(--branco);
     background-color: var(--cor-de-fundo);
@@ -110,13 +110,23 @@ body{
 }
 .fraca{
     width: 25%;
-    background-color: ;
+    background-color: #31e0ff;
 }
 .media{
     width: 25%;
-    background-color: ;
+    background-color: #f8ec48;;
 }
 .forte{
     width: 25%;
-    background-color: ;
+    background-color: #ff2727;;
+}
+.parametro-senha-texto{
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and(min-widht: 768px){
+    parametro-coluna__senha{
+        flex-direction: row;
+    }
 }
