@@ -51,11 +51,10 @@ function geraSenha() {
     if (checkbox[3].checked) {
         alfabeto = alfabeto + simbolos;
     }
-    if (checkbox[4].checked) {
-        alfabeto = alfabeto + emojis;
-    }
-    
-}
+     if (checkbox[4].checked) {
+       alfabeto = alfabeto + emojis.join('');
+   }
+
     let senha = '';
     for (let i = 0; i < tamanhoSenha; i++) {
         let numeroAleatorio = Math.random() * alfabeto.length;
@@ -80,3 +79,4 @@ function classificaSenha(tamanhoAlfabeto){
     }
     const valorEntropia = document.querySelector('.entropia');
     valorEntropia.textContent = "Um computador pode levar até " + Math.floor(2**entropia/(100e6*60*60*24)) + " dias para descobrir essa senha.";
+}
