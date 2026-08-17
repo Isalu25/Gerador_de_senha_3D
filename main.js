@@ -5,6 +5,8 @@ const letrasMaiusculas = 'ABCDEFGHIJKLMNOPQRSTUVXYWZ';
 const letrasMinusculas = 'abcdefghijklmnopqrstuvxywz';
 const numeros = '0123456789';
 const simbolos = '!@%*?';
+const emojisCarinhas = ['😀','😎','🤖','👾'];
+const emojisAnimais = ['🦁','🦊','🐼','🦅'];
 const botoes = document.querySelectorAll('.parametro-senha__botao');
 const campoSenha = document.querySelector('#campo-senha');
 const checkbox = document.querySelectorAll('.checkbox');
@@ -50,6 +52,9 @@ function geraSenha() {
     if (checkbox[3].checked) {
         alfabeto = alfabeto + simbolos;
     }
+    if (checkAnimais.checked) {
+    senha += arrayAleatorio(emojisAnimais);
+    }
     let senha = '';
     for (let i = 0; i < tamanhoSenha; i++) {
         let numeroAleatorio = Math.random() * alfabeto.length;
@@ -74,9 +79,3 @@ function classificaSenha(tamanhoAlfabeto){
     }
     const valorEntropia = document.querySelector('.entropia');
     valorEntropia.textContent = "Um computador pode levar até " + Math.floor(2**entropia/(100e6*60*60*24)) + " dias para descobrir essa senha.";
-}
-const emojisCarinhas = ['😀','😎','🤖','👾'];
-const emojisAnimais = ['🦁','🦊','🐼','🦅'];
-if (checkAnimais.checked) {
-    senha += arrayAleatorio(emojisAnimais);
-}
