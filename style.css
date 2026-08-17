@@ -113,11 +113,11 @@ body{
     background-color: #31e0ff;
 }
 .media{
-    width: 25%;
+    width: 50%;
     background-color: #f8ec48;;
 }
 .forte{
-    width: 25%;
+    width: 100%;
     background-color: #ff2727;;
 }
 .parametro-senha-texto{
